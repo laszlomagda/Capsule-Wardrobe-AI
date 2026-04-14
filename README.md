@@ -8,6 +8,9 @@ I got tired of buying clothes I never wear. So I used AI to build a capsule ward
 
 The process took several sessions across Claude and ChatGPT. When it worked, I saved the whole method so others could use it too.
 
+## Disclaimer 
+This is a style guidance tool, not professional advice. No personal data is stored between sessions." Two lines, no legal weight, just honest framing.
+
 ## Two versions, pick yours
 
 ### For people comfortable with AI tools
