@@ -361,7 +361,7 @@ Claude Project flow matches the .skill installation flow."
 
 **Why:** The v2 SKILL.md does not include the ChatGPT-only machinery (`OPERATING HIERARCHY`, `REFERENCE TRIGGERS`, `EXECUTION LOOP`, `STEP TRANSITION RULE`, `SELF-CHECK`) or the v1.1.0 ChatGPT step content (DALL·E body-data block, partial/total uniform, brand-by-category sourcing). We layer v2's additions on top of v1.1.0's structure rather than overwriting.
 
-- [ ] **Step 1: Read the current file (sanity check)**
+- [x] **Step 1: Read the current file (sanity check)**
 
 Run:
 ```bash
@@ -370,7 +370,7 @@ wc -l /Users/laszlomagda/Documents/Capsule-Wardrobe-AI/chatgpt-version/SYSTEM_IN
 
 Expected: `265` (the v1.1.0 file).
 
-- [ ] **Step 2: Replace the entire file with the v2 integrated content**
+- [x] **Step 2: Replace the entire file with the v2 integrated content**
 
 Use the Write tool to overwrite `/Users/laszlomagda/Documents/Capsule-Wardrobe-AI/chatgpt-version/SYSTEM_INSTRUCTIONS.md` with the EXACT content below:
 
@@ -781,7 +781,7 @@ For these users, the capsule system works differently:
 
 (The outer ```````markdown` fence shown in this plan is for clarity only. The destination file content starts at the YAML `---` line and ends at the final `Colour theory is a hypothesis, not a verdict.` line, with no outer fence.)
 
-- [ ] **Step 3: Verify v1.1.0 ChatGPT-specific gains are preserved**
+- [x] **Step 3: Verify v1.1.0 ChatGPT-specific gains are preserved**
 
 Run:
 ```bash
@@ -790,7 +790,7 @@ grep -c "OPERATING HIERARCHY\|REFERENCE TRIGGERS\|EXECUTION LOOP\|STEP TRANSITIO
 
 Expected: `9`.
 
-- [ ] **Step 4: Verify v2 additions are present**
+- [x] **Step 4: Verify v2 additions are present**
 
 Run:
 ```bash
@@ -799,7 +799,7 @@ grep -c "Before You Begin: Read the User\|The Explorer\|The Expert\|The Pragmati
 
 Expected: `13`.
 
-- [ ] **Step 5: Verify diverse style tension examples are present**
+- [x] **Step 5: Verify diverse style tension examples are present**
 
 Run:
 ```bash
@@ -808,7 +808,7 @@ grep -c "structured femininity with an edge\|sharp restraint with athletic ease\
 
 Expected: `4`.
 
-- [ ] **Step 6: Verify version frontmatter**
+- [x] **Step 6: Verify version frontmatter**
 
 Run:
 ```bash
@@ -817,7 +817,7 @@ grep -E "^version:" /Users/laszlomagda/Documents/Capsule-Wardrobe-AI/chatgpt-ver
 
 Expected: `version: 2.0.0`.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 Run:
 ```bash
