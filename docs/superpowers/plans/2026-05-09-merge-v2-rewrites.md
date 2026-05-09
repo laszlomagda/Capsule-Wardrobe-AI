@@ -63,14 +63,14 @@ Expected: `feat/v2-merge`
 
 **Why repackage:** The v2 `.skill` zip contains a folder named `capsule-wardrobe-builder-v2/`. The repo's v1 `.skill` uses `capsule-wardrobe-builder/`. We keep the original folder name to preserve the skill's installed identity.
 
-- [ ] **Step 1: Copy v2 SKILL.md into the repo (readable source)**
+- [x] **Step 1: Copy v2 SKILL.md into the repo (readable source)**
 
 Run:
 ```bash
 cp "/Users/laszlomagda/Library/Application Support/Claude/local-agent-mode-sessions/bfcf8a8c-4c82-4962-8851-8a78f32358c2/52e77dc8-01c1-425f-af06-f818c087ddef/local_ab11e29f-b899-49d6-a86d-90824e29dee2/outputs/SKILL.md" /Users/laszlomagda/Documents/Capsule-Wardrobe-AI/claude-version/SKILL.md
 ```
 
-- [ ] **Step 2: Verify the copy is byte-identical to the v2 source**
+- [x] **Step 2: Verify the copy is byte-identical to the v2 source**
 
 Run:
 ```bash
@@ -79,7 +79,7 @@ diff -q "/Users/laszlomagda/Library/Application Support/Claude/local-agent-mode-
 
 Expected: no output (files identical).
 
-- [ ] **Step 3: Confirm v2 markers are present in the new SKILL.md**
+- [x] **Step 3: Confirm v2 markers are present in the new SKILL.md**
 
 Run:
 ```bash
@@ -88,7 +88,7 @@ grep -c "Before You Begin: Read the User\|Quick Capsule Mode\|For Opportunistic 
 
 Expected: `6` (one match per v2 section).
 
-- [ ] **Step 4: Repackage the `.skill` with the original folder name**
+- [x] **Step 4: Repackage the `.skill` with the original folder name**
 
 Run:
 ```bash
@@ -102,7 +102,7 @@ rm -rf capsule-wardrobe-builder
 
 Expected: zip outputs `adding: capsule-wardrobe-builder/ (stored 0%)` and `adding: capsule-wardrobe-builder/SKILL.md (deflated XX%)`.
 
-- [ ] **Step 5: Verify the repackaged `.skill` structure**
+- [x] **Step 5: Verify the repackaged `.skill` structure**
 
 Run:
 ```bash
@@ -116,7 +116,7 @@ capsule-wardrobe-builder/SKILL.md
 ```
 (NOT `capsule-wardrobe-builder-v2/`.)
 
-- [ ] **Step 6: Verify the unzipped SKILL.md is byte-identical to the readable copy**
+- [x] **Step 6: Verify the unzipped SKILL.md is byte-identical to the readable copy**
 
 Run:
 ```bash
@@ -125,7 +125,7 @@ unzip -p /Users/laszlomagda/Documents/Capsule-Wardrobe-AI/claude-version/capsule
 
 Expected: no output.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 Run:
 ```bash
