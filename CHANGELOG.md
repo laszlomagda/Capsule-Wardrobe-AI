@@ -4,6 +4,31 @@ All notable changes to the Capsule Wardrobe Builder will be documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] — 2026-05-09
+
+### Added
+- **User Mode Detection** — agent now reads which of five user archetypes is in front of it (Explorer, Expert, Pragmatist, Constrained, Adaptive Shopper) and routes accordingly. Runs before Step 1.
+- **Step 1 fallbacks** — explicit paths when the user can't name a style reference or gives concepts instead of people.
+- **Diverse style tension examples** — examples now span women, men, subtle/minimal, and functional/practical aesthetics, in both the skill body and `reference_style_tension.md`.
+- **Quick Capsule Mode** — compressed 5-step protocol for time-constrained or aesthetics-indifferent users. Delivers 4–5 formulas immediately with the option to deepen later.
+- **Confirmation Checkpoints** — explicit confirmation gates before Steps 5, 10, and 11 to prevent building on weak assumptions.
+- **Maintaining Progress** snapshot — running summary template that survives long sessions and multi-session breaks.
+- **Detecting Structural Constraints** — Step 2 distinguishes preferences from structural constraints (sizing beyond standard range, extreme budget, workplace uniform/regulation, physical accessibility) and instructs the agent to restructure the process around them.
+- **For Opportunistic Shoppers** — parallel track for find-then-curate shoppers, including a wildcard allocation and a found-piece decision tree.
+- **Cross-reference checkpoints** at Steps 5, 8, and 10 — verify formulas, lifestyle strategy, and shopping list against the constraints from Step 2.
+- **Tool-agnostic visual guidance** — colour analysis and outfit visualisation now work with any image-capable AI, with text-only fallbacks if no visual tool is available.
+- **`claude-version/SKILL.md`** — readable, version-controlled source committed alongside the packaged `.skill`.
+
+### Changed
+- **Inclusive description** — frontmatter description now reads "guides anyone (regardless of gender, budget, or shopping style)".
+- **Two-AI section** in the Claude version replaced by tool-agnostic Visual Tools guidance. ChatGPT-specific DALL·E flows are preserved in the ChatGPT version.
+- **EXECUTION LOOP** (ChatGPT version) gains a user-mode identification step and a checkpoint-due check.
+- **STEP TRANSITION RULE** (ChatGPT version) now references the explicit Checkpoints section.
+- **SELF-CHECK** (ChatGPT version) adds the visible-surface uniform-overlay validation to its high-stakes pass.
+
+### Why
+This release is grounded in a structured 9-persona test (4 generic adversarial + 5 character personas) that scored v1.1.0 between 2/10 and 5.5/10 on the character walkthroughs. The findings (Miranda Priestly: no expert pathway; The Engineer: assumes enthusiasm; The Curvy Girl: sizing as peripheral; The Closeted PO: no taste/budget reality check; The Factory Worker: plan→buy assumption breaks for opportunistic shoppers) drove the eight rewrites that became this release.
+
 ## [1.1.0] — 2026-04-15
 
 ### Added
