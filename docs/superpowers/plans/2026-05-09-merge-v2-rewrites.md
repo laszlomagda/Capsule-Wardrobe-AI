@@ -150,7 +150,7 @@ git commit -m "feat(claude): land v2 SKILL.md and repackage .skill
 
 **Why:** The Project Setup MD wraps a copy-paste custom-instructions block (currently lines 22–69). The block must be replaced with v2-aligned content so users who set up a Claude Project (rather than installing the `.skill`) get the same v2 behaviour.
 
-- [ ] **Step 1: Read the current file to confirm structure**
+- [x] **Step 1: Read the current file to confirm structure**
 
 Run:
 ```bash
@@ -159,7 +159,7 @@ sed -n '20,72p' /Users/laszlomagda/Documents/Capsule-Wardrobe-AI/claude-version/
 
 Expected: shows the line `## Custom Instructions (Copy This Entire Block)`, then a triple-backtick fenced block, then the closing triple backticks around line 69.
 
-- [ ] **Step 2: Rewrite the Custom Instructions section with v2 content**
+- [x] **Step 2: Rewrite the Custom Instructions section with v2 content**
 
 Use the Edit tool to replace the entire block from the `## Custom Instructions (Copy This Entire Block)` heading down to the closing triple backticks (`` ``` ``) and inclusive of both fence lines.
 
@@ -322,7 +322,7 @@ GUIDELINES:
 
 (The `````markdown` outer fence above is shown for clarity in this plan only — when applying the edit, paste the inner content starting with `## Custom Instructions (Copy This Entire Block)` and ending with the inner closing triple-backtick. Do NOT include the outer 5-tick fence in the destination file.)
 
-- [ ] **Step 3: Verify v2 markers exist in the rewritten file**
+- [x] **Step 3: Verify v2 markers exist in the rewritten file**
 
 Run:
 ```bash
@@ -331,7 +331,7 @@ grep -c "Before You Begin: Read the User\|Quick Capsule Mode\|For Opportunistic 
 
 Expected: `8`.
 
-- [ ] **Step 4: Verify the surrounding setup text is intact**
+- [x] **Step 4: Verify the surrounding setup text is intact**
 
 Run:
 ```bash
@@ -340,7 +340,7 @@ grep -c "How to Set Up Your Own Capsule Wardrobe AI Agent\|What You Need\|Setup:
 
 Expected: `5`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 Run:
 ```bash
