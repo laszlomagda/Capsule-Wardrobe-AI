@@ -987,7 +987,7 @@ git commit -m "feat(chatgpt): add diverse examples and Step 1 fallbacks to refer
 - Modify: `README.md`
 - Modify: `CHANGELOG.md`
 
-- [ ] **Step 1: Update the README "What this is" / "What you'll end up with" framing to mention v2 additions**
+- [x] **Step 1: Update the README "What this is" / "What you'll end up with" framing to mention v2 additions**
 
 Use the Edit tool on `/Users/laszlomagda/Documents/Capsule-Wardrobe-AI/README.md` to replace the existing line:
 
@@ -1001,7 +1001,7 @@ New:
 The process took several sessions across Claude and ChatGPT. When it worked, I saved the whole method so others could use it too. **v2.0.0** broadens the system: it now reads which kind of user you are (Explorer, Expert, Pragmatist, Constrained, Adaptive Shopper) and adapts — including a Quick Capsule Mode for people short on time, an Opportunistic Shopper track for people who buy what they find rather than what they planned, and explicit confirmation checkpoints before high-stakes steps.
 ```
 
-- [ ] **Step 2: Update the README's "What you'll end up with" list to mention the wider applicability**
+- [x] **Step 2: Update the README's "What you'll end up with" list to mention the wider applicability**
 
 Use the Edit tool on `/Users/laszlomagda/Documents/Capsule-Wardrobe-AI/README.md` to replace:
 
@@ -1028,7 +1028,7 @@ New:
 - A progress snapshot that survives across sessions
 ```
 
-- [ ] **Step 3: Verify README updates**
+- [x] **Step 3: Verify README updates**
 
 Run:
 ```bash
@@ -1037,7 +1037,7 @@ grep -c "v2.0.0\|Quick Capsule Mode\|Opportunistic Shopper\|Adaptive Shopper\|pr
 
 Expected: at least `5`.
 
-- [ ] **Step 4: Add the CHANGELOG entry**
+- [x] **Step 4: Add the CHANGELOG entry**
 
 Use the Edit tool on `/Users/laszlomagda/Documents/Capsule-Wardrobe-AI/CHANGELOG.md` to insert a new release block immediately after the line `The format follows [Keep a Changelog]...` and before `## [1.1.0] — 2026-04-15`.
 
@@ -1080,7 +1080,7 @@ This release is grounded in a structured 9-persona test (4 generic adversarial +
 ## [1.1.0] — 2026-04-15
 ```
 
-- [ ] **Step 5: Verify CHANGELOG**
+- [x] **Step 5: Verify CHANGELOG**
 
 Run:
 ```bash
@@ -1089,7 +1089,7 @@ grep -c "## \[2.0.0\] — 2026-05-09\|User Mode Detection\|Quick Capsule Mode\|C
 
 Expected: `7`.
 
-- [ ] **Step 6: Verify the v1.1.0 entry is still present below the new v2.0.0 entry**
+- [x] **Step 6: Verify the v1.1.0 entry is still present below the new v2.0.0 entry**
 
 Run:
 ```bash
@@ -1098,7 +1098,7 @@ grep -n "## \[1.1.0\]\|## \[1.0.0\]\|## \[2.0.0\]" /Users/laszlomagda/Documents/
 
 Expected: three matches in order, with `[2.0.0]` first, then `[1.1.0]`, then `[1.0.0]`.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 Run:
 ```bash
