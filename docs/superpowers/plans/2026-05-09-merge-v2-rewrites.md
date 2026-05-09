@@ -845,7 +845,7 @@ partial/total uniform handling, brand-by-category sourcing."
 
 **Why:** The reference file's example tensions are all feminine-coded. v2's diverse-examples improvement and Step 1 fallback paths must be reflected in the reference so the ChatGPT execution loop applies them consistently.
 
-- [ ] **Step 1: Read the current file**
+- [x] **Step 1: Read the current file**
 
 Run:
 ```bash
@@ -854,7 +854,7 @@ wc -l /Users/laszlomagda/Documents/Capsule-Wardrobe-AI/chatgpt-version/reference
 
 Expected: `54`.
 
-- [ ] **Step 2: Replace the file with the updated content**
+- [x] **Step 2: Replace the file with the updated content**
 
 Use the Write tool to overwrite `/Users/laszlomagda/Documents/Capsule-Wardrobe-AI/chatgpt-version/reference_style_tension.md` with the EXACT content below:
 
@@ -936,7 +936,7 @@ The tension language should match the user's own vocabulary. If they say "I just
 - A tension that uses vocabulary the user wouldn't use themselves — it won't feel like theirs
 ````
 
-- [ ] **Step 3: Verify diverse examples are present**
+- [x] **Step 3: Verify diverse examples are present**
 
 Run:
 ```bash
@@ -945,7 +945,7 @@ grep -c "Men's\|Subtle/Minimal\|Functional/Practical" /Users/laszlomagda/Documen
 
 Expected: at least `6` (each category appears in the table header column at least twice across rows; counting unique row labels gives 6+).
 
-- [ ] **Step 4: Verify fallback section is present**
+- [x] **Step 4: Verify fallback section is present**
 
 Run:
 ```bash
@@ -954,7 +954,7 @@ grep -c "Fallbacks for when the loop stalls\|If the user can't name a person\|If
 
 Expected: `3`.
 
-- [ ] **Step 5: Verify version frontmatter**
+- [x] **Step 5: Verify version frontmatter**
 
 Run:
 ```bash
@@ -963,7 +963,7 @@ grep -E "^version:" /Users/laszlomagda/Documents/Capsule-Wardrobe-AI/chatgpt-ver
 
 Expected: `version: 2.0.0`.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 Run:
 ```bash
