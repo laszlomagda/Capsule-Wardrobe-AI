@@ -32,7 +32,7 @@
 
 **Files:** none (git operation only)
 
-- [ ] **Step 1: Create and switch to a feature branch**
+- [x] **Step 1: Create and switch to a feature branch**
 
 Run:
 ```bash
@@ -44,7 +44,7 @@ Expected output:
 Switched to a new branch 'feat/v2-merge'
 ```
 
-- [ ] **Step 2: Verify branch**
+- [x] **Step 2: Verify branch**
 
 Run:
 ```bash
