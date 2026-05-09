@@ -6,7 +6,7 @@ Build a personalised capsule wardrobe using AI — not by following trends, but 
 
 I got tired of buying clothes I never wear. So I used AI to build a capsule wardrobe system: 10 outfit formulas, 17 variations, every piece works with at least 3 others. No waste.
 
-The process took several sessions across Claude and ChatGPT. When it worked, I saved the whole method so others could use it too.
+The process took several sessions across Claude and ChatGPT. When it worked, I saved the whole method so others could use it too. **v2.0.0** broadens the system: it now reads which kind of user you are (Explorer, Expert, Pragmatist, Constrained, Adaptive Shopper) and adapts — including a Quick Capsule Mode for people short on time, an Opportunistic Shopper track for people who buy what they find rather than what they planned, and explicit confirmation checkpoints before high-stakes steps.
 
 ## Pick your version
 
@@ -47,11 +47,12 @@ You can use either version on its own, or combine them if you enjoy the workflow
 
 ## What you'll end up with
 
-- A one-sentence style identity (your tension)
+- A one-sentence style identity (your tension) — with diverse examples for women, men, and minimal/functional aesthetics
 - A personal colour palette with visual swatches
-- 8-12 outfit formulas with sub-variations
-- A prioritised shopping list
+- 8-12 outfit formulas with sub-variations (or a 4-5 formula starter via Quick Capsule Mode)
+- A prioritised shopping list, adapted to the brands and sizes that actually serve you
 - A reference document you can take to any shop
+- A progress snapshot that survives across sessions
 
 ## Disclaimer
 
