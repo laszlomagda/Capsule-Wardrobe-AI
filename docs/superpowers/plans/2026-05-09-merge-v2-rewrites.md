@@ -1119,7 +1119,7 @@ claude-version/SKILL.md."
 
 **Files:** none (git/gh operation only)
 
-- [ ] **Step 1: Push the branch**
+- [x] **Step 1: Push the branch**
 
 Run:
 ```bash
@@ -1129,7 +1129,7 @@ git push -u origin feat/v2-merge
 
 Expected: branch is created on remote and tracking is set up.
 
-- [ ] **Step 2: Open the PR**
+- [x] **Step 2: Open the PR**
 
 Run:
 ```bash
